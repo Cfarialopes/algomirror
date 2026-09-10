@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>AlgoMirror — Conectando...</title>
+<style>
+  body { font-family: -apple-system, sans-serif; display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0; background: #0A0A0A; color: #F5F5F7; }
+  .msg { text-align: center; }
+  h2 { font-weight: 300; font-size: 24px; }
+  p { color: #6E6E73; }
+</style>
+</head>
+<body>
+<div class="msg">
+  <h2>Conectando ao AlgoMirror...</h2>
+  <p>Você será redirecionado em instantes.</p>
+</div>
+<script>
+  const params = window.location.search;
+  window.location.href = 'http://localhost:3000/auth/callback' + params;
+</script>
+</html>
